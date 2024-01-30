@@ -71,6 +71,12 @@ class _CreateEmployeeScreenState extends State<CreateEmployeeScreen> {
                          message:  "Please Wait ...",
                          duration:  Duration(seconds: 1),
                        )..show(context);
+
+                       setState(() {
+                         _employee_name.text="";
+                         _employee_age.text="";
+                         _employee_salary.text="";
+                       });
                      }else{
                        Flushbar(
                          flushbarPosition: FlushbarPosition.TOP,

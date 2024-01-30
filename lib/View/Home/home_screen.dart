@@ -4,9 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:r_kitchen/Controller/employee_provider.dart';
 import 'package:r_kitchen/CustomComponent/CustomText.dart';
-import 'package:r_kitchen/View/Home/employees.dart';
+import 'package:r_kitchen/View/Home/Employees/employees.dart';
 
-import 'create_employee.dart';
+import 'CreateEmployees/create_employee.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -20,9 +20,21 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       appBar: AppBar(
-           backgroundColor: Colors.blue,
-           centerTitle: true,title: Text("Welcome")),
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+          },
+          icon: Icon(Icons.arrow_back),color: Colors.blue,),
+        backgroundColor: Colors.blue,
+        centerTitle: true,
+        title:  Text( "Welcome",style: GoogleFonts.poppins(
+            fontSize: 18,
+            letterSpacing: 0.6,
+            fontWeight: FontWeight.bold,
+            color: Colors.black87
+        ),
+        ),
+      ),
       body: WillPopScope(
         onWillPop: () {
           return Future(() => false);
