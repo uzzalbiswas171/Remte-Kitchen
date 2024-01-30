@@ -33,7 +33,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       height: widget.height,
       width: double.infinity,
       margin: EdgeInsets.only(
-          left: 15,right: 15
+          left: 15,right: 15,top: 8
       ),
       child: TextFormField(
         obscureText: widget.obscureText,
