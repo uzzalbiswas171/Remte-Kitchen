@@ -26,7 +26,7 @@ class _SpaloshScreenState extends State< SpalshScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Welcome Our \nAssinment",textAlign: TextAlign.center,style: GoogleFonts.poppins(
+        child: Text("Welcome My \nAssinment",textAlign: TextAlign.center,style: GoogleFonts.poppins(
           fontSize: 25,
           color: Colors.black87,
           letterSpacing: 0.6,
