@@ -40,7 +40,9 @@ class CustomHttp{
       print(response.body);
       if(response.statusCode==200){
      final employees=jsonDecode(response.body);
-
+     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+         duration: Duration(seconds: 3),
+         content: Text("Create Successful,.\nPlease Try to hit other Api after 1 min...")));
       }
      } catch(e){
        print("Create Employee Catch error ${e}");
