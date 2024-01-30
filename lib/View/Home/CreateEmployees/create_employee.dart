@@ -93,6 +93,13 @@ class _CreateEmployeeScreenState extends State<CreateEmployeeScreen> {
           ),
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
+      floatingActionButton:FloatingActionButton(
+        child: Icon(Icons.home,size: 30,color: Colors.white,),
+        backgroundColor: Colors.redAccent,
+        onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen(),));
+        },) ,
     );
   }
 }
